@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MediSafe" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Основные цвета приложения -->
+        <item name="colorPrimary">@color/primary_blue</item>
+        <item name="colorPrimaryContainer">@color/primary_light_blue</item>
+        <item name="colorSecondary">@color/accent_green</item>
+        <item name="colorSecondaryContainer">@color/accent_light_green</item>
+        <item name="colorTertiary">@color/status_warning</item>
+        <item name="colorTertiaryContainer">@color/alert_light_orange</item>
+
+        <!-- Цвет акцента для полей ввода и выделения -->
+        <item name="colorPrimaryVariant">@color/primary_blue</item>
+        <item name="colorSecondaryVariant">@color/primary_dark_blue</item>
+
+        <!-- Цвета для состояний полей ввода -->
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="colorOnSurfaceVariant">@color/text_secondary</item>
+
+        <!-- Цвета для TextInputLayout -->
+        <item name="materialThemeOverlay">@style/ThemeOverlay.MediSafe.TextInputLayout</item>
+
+        <!-- Дополнительные настройки -->
+        <item name="android:statusBarColor">@color/primary_dark_blue</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:navigationBarColor">@color/primary_blue</item>
+    </style>
+
+    <!-- Стиль для TextInputLayout -->
+    <style name="ThemeOverlay.MediSafe.TextInputLayout" parent="">
+        <item name="boxStrokeColor">@color/primary_blue</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxStrokeWidthFocused">2dp</item>
+        <item name="hintTextColor">@color/text_secondary</item>
+        <item name="errorTextColor">@color/warning_red</item>
+        <item name="boxBackgroundColor">@color/primary_light_blue</item>
+        <item name="boxBackgroundMode">filled</item>
+    </style>
+
+    <style name="CustomDialogTheme" parent="ThemeOverlay.Material3.MaterialAlertDialog.Centered">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+        <item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>
+        <item name="buttonBarNeutralButtonStyle">@style/NeutralButtonStyle</item>
+        <item name="buttonBarNegativeButtonStyle">@style/NegativeButtonStyle</item>
+    </style>
+
+    <style name="PositiveButtonStyle" parent="Widget.Material3.Button">
+        <item name="android:background">@drawable/button_positive</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
+    <style name="NeutralButtonStyle" parent="Widget.Material3.Button">
+        <item name="android:background">@drawable/button_neutral</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
+    <style name="NegativeButtonStyle" parent="Widget.Material3.Button">
+        <item name="android:background">@drawable/button_negative</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
+    <style name="Theme.MediSafe" parent="Base.Theme.MediSafe" />
+
+</resources>

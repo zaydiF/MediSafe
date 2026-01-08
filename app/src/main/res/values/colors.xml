@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Новая медицинская палитра MediSafe -->
+    <color name="primary_blue">#FF1976D2</color>
+    <color name="primary_light_blue">#FFE3F2FD</color>
+    <color name="primary_dark_blue">#FF0D47A1</color>
+
+    <color name="accent_green">#FF4CAF50</color>
+    <color name="accent_light_green">#FFE8F5E9</color>
+
+    <color name="warning_red">#FFF44336</color>
+    <color name="warning_light_red">#FFFFEBEE</color>
+
+    <color name="alert_orange">#FFFF9800</color>
+    <color name="alert_light_orange">#FFFFF3E0</color>
+
+    <!-- Нейтральные цвета -->
+    <color name="background_light">#FFF5F5F5</color>
+    <color name="card_background">#FFFFFFFF</color>
+    <color name="text_primary">#FF212121</color>
+    <color name="text_secondary">#FF757575</color>
+    <color name="text_hint">#FFBDBDBD</color>
+    <color name="border_light">#FFE0E0E0</color>
+    <color name="divider">#FFEEEEEE</color>
+
+    <!-- Статусные цвета -->
+    <color name="status_success">#FF4CAF50</color>
+    <color name="status_warning">#FFFF9800</color>
+    <color name="status_error">#FFF44336</color>
+    <color name="status_info">#FF2196F3</color>
+
+    <!-- Обязательные цвета для темы -->
+    <color name="colorPrimary">#FF1976D2</color>
+    <color name="colorPrimaryDark">#FF0D47A1</color>
+    <color name="colorAccent">#FF4CAF50</color>
+
+    <!-- Цвета для кнопок -->
+    <color name="primary_text">#FF212121</color>
+    <color name="button_positive">#FF4CAF50</color>
+    <color name="button_neutral">#FF2196F3</color>
+    <color name="button_negative">#FFF44336</color>
+</resources>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="3dp"
+    app:cardBackgroundColor="@color/card_background"
+    app:strokeColor="@color/border_light"
+    app:strokeWidth="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Верхняя строка - название и количество -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <!-- Иконка лекарства -->
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@android:drawable/ic_secure"
+                android:tint="@color/primary_blue"
+                android:layout_marginEnd="12dp" />
+
+            <TextView
+                android:id="@+id/textMedicineName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Название лекарства"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary" />
+
+            <!-- Бейдж количества -->
+            <TextView
+                android:id="@+id/textMedicineAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20 шт"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:background="@drawable/bg_medical_blue"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="6dp"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <!-- Вторая строка - форма и дозировка -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="36dp">
+
+            <TextView
+                android:id="@+id/textMedicineForm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Таблетки"
+                android:textSize="14sp"
+                android:textColor="@color/text_secondary" />
+
+            <View
+                android:layout_width="4dp"
+                android:layout_height="4dp"
+                android:background="@color/text_secondary"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="8dp" />
+
+            <TextView
+                android:id="@+id/textMedicineDosage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="50 мг"
+                android:textSize="14sp"
+                android:textColor="@color/text_secondary" />
+
+        </LinearLayout>
+
+        <!-- Срок годности -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="36dp">
+
+            <!-- Заменили ic_lock_time на стандартную иконку -->
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@android:drawable/ic_menu_month"
+                android:tint="@color/text_secondary"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:id="@+id/textMedicineExpiry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Годен до: 01.01.2025"
+                android:textSize="13sp"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

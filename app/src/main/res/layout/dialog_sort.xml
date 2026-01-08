@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@drawable/dialog_background">
+
+    <!-- Заголовок -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Сортировка лекарств"
+        android:textColor="@color/primary_text"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Кнопка сортировки по названию А-Я -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonNameAsc"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="По названию (А-Я)"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textAllCaps="false"
+        android:layout_marginBottom="8dp"
+        app:backgroundTint="@color/primary_blue"
+        app:cornerRadius="12dp" />
+
+    <!-- Кнопка сортировки по названию Я-А -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonNameDesc"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="По названию (Я-А)"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textAllCaps="false"
+        android:layout_marginBottom="8dp"
+        app:backgroundTint="@color/primary_blue"
+        app:cornerRadius="12dp" />
+
+    <!-- Кнопка сортировки по сроку годности -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonExpiry"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="По сроку годности"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textAllCaps="false"
+        android:layout_marginBottom="8dp"
+        app:backgroundTint="@color/primary_blue"
+        app:cornerRadius="12dp" />
+
+    <!-- Кнопка сортировки по дате добавления -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonCreated"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="По дате добавления"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textAllCaps="false"
+        android:layout_marginBottom="8dp"
+        app:backgroundTint="@color/primary_blue"
+        app:cornerRadius="12dp" />
+
+    <!-- Кнопка сортировки "сначала просроченные" -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonExpiredFirst"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="⚠️ Сначала просроченные ⚠️"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textAllCaps="false"
+        android:layout_marginBottom="16dp"
+        app:backgroundTint="@color/button_negative"
+        app:cornerRadius="12dp" />
+
+    <!-- Кнопка отмены -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonCancelSort"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Отмена"
+        android:textColor="@color/primary_text"
+        android:textSize="14sp"
+        android:textAllCaps="false"
+        app:backgroundTint="@color/background_light"
+        app:strokeColor="@color/button_negative"
+        app:strokeWidth="2dp"
+        app:cornerRadius="12dp" />
+
+</LinearLayout>
