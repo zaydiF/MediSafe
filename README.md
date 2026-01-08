@@ -47,7 +47,7 @@ MediSafe - это практическое мобильное приложени
 ## Быстрая установка и запуск
 
 ### Установка через APK
-1. **Скачайте APK-файл**: [MediSafe.apk](https://disk.yandex.ru/d/unique_file_hash)
+1. **Скачайте APK-файл**: [MediSafe.apk](https://disk.yandex.ru/d/T1Lkng0zjWAjYA)
 2. **Настройте Android устройство**:
    - Перейдите в Настройки → Безопасность
    - Включите "Неизвестные источники"
