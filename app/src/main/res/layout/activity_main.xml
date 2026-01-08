@@ -39,7 +39,7 @@
 
     </LinearLayout>
 
-    <!-- Статистика -->
+    <!-- Статистика в 3 колонки -->
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -54,6 +54,7 @@
             android:orientation="horizontal"
             android:padding="16dp">
 
+            <!-- Всего лекарств -->
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -73,17 +74,51 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Всего лекарств"
+                    android:text="Всего"
                     android:textSize="12sp"
                     android:textColor="@color/text_secondary" />
 
             </LinearLayout>
 
+            <!-- Разделитель 1 -->
             <View
                 android:layout_width="1dp"
                 android:layout_height="40dp"
                 android:background="@color/border_light" />
 
+            <!-- Истекает скоро -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/textExpiringMedicines"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/primary_blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Истекает"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_secondary" />
+
+            </LinearLayout>
+
+            <!-- Разделитель 2 -->
+            <View
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:background="@color/border_light" />
+
+            <!-- Просрочено -->
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -98,7 +133,7 @@
                     android:text="0"
                     android:textSize="24sp"
                     android:textStyle="bold"
-                    android:textColor="@color/warning_red" />
+                    android:textColor="@color/primary_blue" />
 
                 <TextView
                     android:layout_width="wrap_content"

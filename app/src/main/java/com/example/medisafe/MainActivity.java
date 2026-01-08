@@ -42,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
     private List<Medicine> medicineList = new ArrayList<>();
 
     private TextView textTotalMedicines;
+    private TextView textExpiringMedicines; // НОВОЕ: для "Истекает"
     private TextView textExpiredMedicines;
     private LinearLayout layoutEmptyState;
     private TextView textSort;
@@ -89,6 +90,7 @@ public class MainActivity extends AppCompatActivity {
     private void initViews() {
         recyclerView = findViewById(R.id.recyclerViewMedicines);
         textTotalMedicines = findViewById(R.id.textTotalMedicines);
+        textExpiringMedicines = findViewById(R.id.textExpiringMedicines); // НОВОЕ
         textExpiredMedicines = findViewById(R.id.textExpiredMedicines);
         layoutEmptyState = findViewById(R.id.layoutEmptyState);
         textSort = findViewById(R.id.textSort);
@@ -143,17 +145,22 @@ public class MainActivity extends AppCompatActivity {
             }
         }
 
+        // Устанавливаем значения для всех трех колонок
         textTotalMedicines.setText(String.valueOf(total));
+        textExpiringMedicines.setText(String.valueOf(expiringSoon));
+        textExpiredMedicines.setText(String.valueOf(expired));
+
+        // Устанавливаем цвета для колонок "Истекает" и "Просрочено"
+        if (expiringSoon > 0) {
+            textExpiringMedicines.setTextColor(ContextCompat.getColor(this, R.color.status_warning));
+        } else {
+            textExpiringMedicines.setTextColor(ContextCompat.getColor(this, R.color.primary_blue));
+        }
 
         if (expired > 0) {
-            textExpiredMedicines.setText(expired + "");
             textExpiredMedicines.setTextColor(ContextCompat.getColor(this, R.color.status_error));
-        } else if (expiringSoon > 0) {
-            textExpiredMedicines.setText(expiringSoon + " Истекает");
-            textExpiredMedicines.setTextColor(ContextCompat.getColor(this, R.color.status_warning));
         } else {
-            textExpiredMedicines.setText("Все в порядке");
-            textExpiredMedicines.setTextColor(ContextCompat.getColor(this, R.color.status_success));
+            textExpiredMedicines.setTextColor(ContextCompat.getColor(this, R.color.primary_blue));
         }
     }
 

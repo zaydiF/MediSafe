@@ -5,7 +5,7 @@
         <!-- Основные цвета приложения -->
         <item name="colorPrimary">@color/primary_blue</item>
         <item name="colorPrimaryContainer">@color/primary_light_blue</item>
-        <item name="colorSecondary">@color/accent_green</item>
+        <item name="colorSecondary">@color/primary_blue</item>
         <item name="colorSecondaryContainer">@color/accent_light_green</item>
         <item name="colorTertiary">@color/status_warning</item>
         <item name="colorTertiaryContainer">@color/alert_light_orange</item>
